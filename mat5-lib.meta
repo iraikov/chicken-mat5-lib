@@ -1,0 +1,28 @@
+; -*- Hen -*-
+
+((egg "mat5-lib.egg") ; This should never change
+
+ ; List here all the files that should be bundled as part of your egg.  
+
+ (files "mat5-lib.scm" "mat5-lib.setup" "mat5-lib.meta" "tests")
+
+ ; Your egg's license:
+
+ (license "GPL-3")
+
+ ; Pick one from the list of categories (see below) for your egg and enter it
+ ; here.
+
+ (category data)
+
+ ; A list of eggs mat5-lib depends on.  If none, you can omit this
+ ; declaration altogether:
+
+ (needs datatype srfi-63 iset endian-port z3)
+
+ (test-depends test)
+
+ (author "Ivan Raikov")
+
+ (synopsis "Reading and writing Level 5 MAT-File format."))
+

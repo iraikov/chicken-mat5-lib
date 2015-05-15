@@ -1,0 +1,18 @@
+; -*- Hen -*-
+
+(compile -s -O -d2 mat5-lib.scm -j mat5-lib)
+(compile -s mat5-lib.import.scm -O2 -d0)
+
+
+(install-extension
+
+  ; Name of your extension:
+  'mat5-lib
+
+  ; Files to install for your extension:
+  `("mat5-lib.so" "mat5-lib.import.so"  )
+
+  ; Assoc list with properties for your extension:
+  `((version 2.5)
+    ))
+
